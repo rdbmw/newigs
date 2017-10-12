@@ -1,0 +1,44 @@
+.advantages-top {
+  background: $cart-info-bh;
+}
+
+.advantages-top__wrapper {
+  @mixin container;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-top__item {
+  padding-top: 20px;
+  padding-bottom: 23px;
+  width: 25%;
+  display: flex;
+}
+
+.advantages-top__item-number {
+  padding-right: 19px;
+  font-size: $fs;
+  color: $color-accent;
+  font-weight: 700;
+}
+
+.advantages-top__item-link {
+  font-size: $fs;
+  color: #fff;
+  font-weight: 700;
+  text-decoration-style: dotted;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-hover;
+  }
+}
+
+.advantages-top__item-description {
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 8px;
+  font-size: $fs_small;
+  color: $cart-size;
+  line-height: 18px;
+}

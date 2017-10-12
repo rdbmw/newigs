@@ -1,0 +1,28 @@
+.page-header__bottom {
+  background-color: $body-bg1;
+  padding: 12px 0;
+}
+
+.main-nav {
+  @mixin notlist;
+  margin-top: 3px;
+  margin-right: 23.8%;
+  margin-bottom: 6px;
+  display: flex;
+}
+
+.main-nav__item {
+  margin-right: 44px;
+  flex-shrink: 0;
+  font-size: $fs_small;
+  font-weight: 700;
+
+  & a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &--accent a {
+    color: $color-hover;
+  }
+}

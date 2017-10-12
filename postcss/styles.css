@@ -3,3 +3,11 @@
 
 @import 'global/normalize.css';
 @import 'global/base.css';
+
+@import 'blocks/page-header-top.css';
+@import 'blocks/page-header-middle.css';
+@import 'blocks/page-header-bottom.css';
+
+@import 'blocks/banner-gender.css';
+@import 'blocks/advantages-top.css';
+@import 'blocks/popular-products.css';

@@ -1,0 +1,102 @@
+.banner-gender {
+  background: $body-bg-light;
+}
+
+.banner-gender-wrapper {
+  @mixin container;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: transparent url('../img/graffitytop.png') center 54px no-repeat;
+  overflow: hidden;
+}
+
+.banner-gender__choice {
+  flex-grow: 1;
+}
+
+.banner-gender__title {
+  margin-left: 21.5%;
+  margin-top: 16%;
+  margin-bottom: 0;
+  position: relative;
+  top: 50px;
+  font-size: 40px;
+  color: $text-color-banner;
+  font-weight: 700;
+  opacity: 0;
+  transition: all 1s ease 0s;
+
+  &--appeared {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+.banner-gender__description {
+  margin-left: 14%;
+  margin-top: 15px;
+  margin-bottom: 84px;
+  position: relative;
+  top: 50px;
+  font-size: $fs_small;
+  color: $text-color-banner;
+  letter-spacing: 1em;
+  opacity: 0;
+  transition: all 1s ease 1s;
+
+    &--appeared {
+      top: 0px;
+      opacity: 1;
+    }
+}
+
+.banner-gender__forman, .banner-gender__forwoman {
+  font-size: $fs;
+  color: $text-color-banner;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-hover;
+  }
+}
+
+.banner-gender__forman {
+  margin-left: 15%;
+  padding-left: 56px;
+  background: transparent url('../img/arrowl.png') left center no-repeat;
+}
+
+.banner-gender__forwoman {
+  margin-left: 12.5%;
+  padding-right: 56px;
+  background: transparent url('../img/arrowr.png') right center no-repeat;
+}
+
+.banner-gender__link {
+  position: relative;
+  font-size: 0px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 302px;
+    height: 302px;
+    top:10px;
+    left: 0px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 0;
+    transition: all 0.2s ease 0s;
+  }
+
+  &:hover::before {
+    transform: scale(1.2);
+  }
+
+  & img {
+    position: relative;
+    z-index: 1;
+  }
+}

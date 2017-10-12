@@ -1,12 +1,34 @@
-$tablet-width: 900px;
 $desktop-width: 1270px;
+$tablet-width: 870px;
+
+$fs: 14px;
+$lh: 1.15;
+$fs_small: 13px;
+$fs_medium: 17px;
+$fs_big: 30px;
+
+$body-bg: #2a2a2b;
+$body-bg1: #28282d;
+$body-bg-light: #f1f1f1;
+$text-color: #2c2c2c;
+$text-color-accent: #f74a4a;
+$text-color-banner: #191919;
+$color-accent: #f63232;
+$color-hover: #ff4c4c;
+$cart-bg: #353535;
+$cart-info-bh: #1e1e1e;
+$cart-link: #ef3a3a;
+$cart-size: #b5a28f;
+$product-color: #354369;
+$product-price: #1f1f1f;
+
+
+
+
+
 $slider-width: 1230px;
-$body-bg: #eaeae6;
-$text-color: #383838;
 $color-viber: #4e4e4e;
 $color-slider: #252525;
-$color-price: #f74444;
-$fs: 14px;
-$lh: 18px;
-$fs_small: 13px;
+
+
 $lh_small: 18px;
