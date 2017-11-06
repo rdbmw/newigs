@@ -1,14 +1,18 @@
 $desktop-width: 1270px;
 $tablet-width: 870px;
+$slider-items: 3;
+$newslider-items: 3;
 
 $fs: 14px;
 $lh: 1.15;
 $fs_small: 13px;
 $fs_medium: 17px;
 $fs_big: 30px;
+$fs_title: 22px;
 
 $body-bg: #2a2a2b;
 $body-bg1: #28282d;
+$body-bg2: #f2f2f2;
 $body-bg-light: #f1f1f1;
 $text-color: #2c2c2c;
 $text-color-accent: #f74a4a;
@@ -21,6 +25,8 @@ $cart-link: #ef3a3a;
 $cart-size: #b5a28f;
 $product-color: #354369;
 $product-price: #1f1f1f;
+$slider-bkg: #f1f1f1;
+$product-new: #31629a;
 
 
 

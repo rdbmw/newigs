@@ -1,0 +1,18 @@
+.banner-middle {
+  background: $cart-info-bh;
+}
+
+.banner-middle__wrapper {
+  @mixin container;
+  text-align: center;
+  background: transparent url('../img/graffitymid.png') center center no-repeat;
+}
+
+.banner-middle__wrapper p {
+  margin: 0;
+  padding: 50px 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}

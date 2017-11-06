@@ -1,0 +1,141 @@
+.slider-wrapper {
+  width: calc(275px * 2 + 70px / 3);
+  background-color: $slider-bkg;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider input[type=radio] {
+  display: none;
+}
+
+.slider__inner {
+  overflow: hidden;
+}
+
+.slider__slides {
+  width: calc(100% * $slider-items);
+  display: flex;
+  transition: transform 0.8s ease;
+}
+
+.slide {
+  position: relative;
+  /*height: 400px;*/
+  display:flex;
+}
+
+
+.slider__controls {
+  position: absolute;
+  margin-bottom: 54px;
+  padding-right: 170px;
+  text-align: right;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
+.slider__controls label {
+  display: inline-block;
+  margin-left: 17px;
+  width: 5px;
+  height: 5px;
+  background-color: #3180d7;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .slider__controls label[for="btn-1"],
+#btn-2:checked ~ .slider__controls label[for="btn-2"],
+#btn-3:checked ~ .slider__controls label[for="btn-3"] {
+  background-color: #ff5b5b;
+}
+
+#btn-1:checked ~ .slider__inner .slider__slides {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .slider__inner .slider__slides {
+  transform: translate(calc(-100%/3));
+}
+
+#btn-3:checked ~ .slider__inner .slider__slides {
+  transform: translate(calc(-100%/3*2));
+}
+
+.slide__forward {
+  @mixin scroll_forward;
+  position: absolute;
+  bottom: 47px;
+  right: 99px;
+}
+
+.slide__backward {
+  @mixin scroll_backward;
+  position: absolute;
+  bottom: 47px;
+  right: 246px;
+}
+
+.slider__title {
+  position: absolute;
+  top: 37px;
+  right: 109px;
+  font-size: $fs_title;
+  color: $product-price;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.slider__slogan {
+  position: absolute;
+  top: 71px;
+  right: 60px;
+  font-size: 15px;
+  color: $product-price;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.slide__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.slide__product {
+  margin-left: 2%;
+  margin-bottom: 7px;
+  width: 70%;
+  text-align: left;
+  color: $product-color;
+  line-height: 22px;
+}
+
+.slide__priceblock {
+  width: 67%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.slide__price {
+  margin-left: 2%;
+  font-size: $fs_medium;
+  color: $product-price;
+  font-weight: 700;
+}
+
+.slide__price-old {
+  font-size: $fs;
+  color: $color-accent;
+  font-weight: 400;
+  text-decoration: line-through;
+}

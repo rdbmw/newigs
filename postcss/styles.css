@@ -11,3 +11,11 @@
 @import 'blocks/banner-gender.css';
 @import 'blocks/advantages-top.css';
 @import 'blocks/popular-products.css';
+@import 'blocks/slider.css';
+@import 'blocks/banner-middle.css';
+@import 'blocks/new-products.css';
+@import 'blocks/brands.css';
+@import 'blocks/advantages-bottom.css';
+@import 'blocks/about.css';
+
+@import 'blocks/page-footer.css';

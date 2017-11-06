@@ -1,0 +1,185 @@
+.brands {
+  background: $body-bg2;
+}
+
+.brands-wrapper {
+  @mixin container;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brands__title, .brands__description {
+  margin-top: 36px;
+  margin-bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 27px;
+  line-height:20px;
+  color: #1f1f1f;
+  font-weight: 700;
+}
+
+.brands__description {
+  margin-top: 15px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #191919;
+}
+
+.brands__images {
+  margin-top: 38px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands__image {
+  position: relative;
+  flex-shrink: 0;
+  font-size: 0px;
+}
+
+.brands__image::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right :0;
+  background: rgba(40, 40, 40, 0.49);
+  z-index: 1;
+}
+
+.brands__image:hover::after {
+  background: rgba(40, 40, 40, 0.40);
+}
+
+.brand__images-title {
+  position: absolute;
+  top: 73px;
+  left: 0;
+  right: 0;
+  font-size: 20px;
+  line-height:20px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  z-index: 2;
+}
+
+.brand__images-text {
+  position: absolute;
+  top: 105px;
+  left: 0;
+  right: 0;
+  font-size: 17px;
+  line-height:20px;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  z-index: 2;
+}
+
+.brands__list {
+  margin-top: 49px;
+  padding-bottom: 106px;
+  width: 100%;
+  position: relative;
+  background: transparent url('../img/graffitybrand.png') center 35px no-repeat;
+  overflow: hidden;
+}
+
+.brands__list input[type=radio] {
+  display: none;
+}
+
+.brand__list-inner {
+  width: 170%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 300px;
+  justify-content: space-between;
+  align-items: stretch;
+  transition: transform 0.8s ease;
+}
+
+.brands__letter {
+  font-size: 13px;
+  line-height:24px;
+  color: #f63232;
+  font-weight: 700;
+}
+
+.brands__item {
+  font-size: 11px;
+  line-height:24px;
+  color: #1f1f1f;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    color: #f63232;
+  }
+}
+
+.brands__controls {
+  position: absolute;
+  text-align: center;
+  bottom: 45px;
+  left: 0;
+  right: 0;
+}
+
+.brands__controls label {
+  display: inline-block;
+  margin-left: 17px;
+  width: 5px;
+  height: 5px;
+  background-color: #3180d7;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+#btn-1-2:checked ~ .brands__controls label[for="btn-1-2"],
+#btn-2-2:checked ~ .brands__controls label[for="btn-2-2"],
+#btn-3-2:checked ~ .brands__controls label[for="btn-3-2"],
+#btn-4-2:checked ~ .brands__controls label[for="btn-4-2"],
+#btn-5-2:checked ~ .brands__controls label[for="btn-5-2"] {
+  background-color: #ff5b5b;
+}
+
+#btn-1-2:checked ~ .brand__list-inner {
+  transform: translate(0);
+}
+
+#btn-2-2:checked ~ .brand__list-inner {
+  transform: translate(calc(-10%));
+}
+
+#btn-3-2:checked ~ .brand__list-inner {
+  transform: translate(calc(-20%));
+}
+
+#btn-4-2:checked ~ .brand__list-inner {
+  transform: translate(calc(-30%));
+}
+
+#btn-5-2:checked ~ .brand__list-inner {
+  transform: translate(calc(-40%));
+}
+
+.brands__forward {
+  @mixin scroll_forward;
+  position: absolute;
+  bottom: 38px;
+  left: 670px;
+}
+
+.brands__backward {
+  @mixin scroll_backward;
+  position: absolute;
+  bottom: 38px;
+  left: 490px;
+}

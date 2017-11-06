@@ -61,6 +61,7 @@
   text-align: center;
   color: $product-color;
 }
+
 .popular-products__priceblock {
   margin-top: 12px;
   display: flex;
@@ -98,12 +99,9 @@
 
 .popular-products__item--new::after {
   content: 'новинка';
+  background: $product-new;
 }
 
 .popular-products__item--discount::after {
   content: 'скидка';
-}
-
-.popular-products__slider {
-  width: calc(275px * 2 + 70px / 3);
 }
