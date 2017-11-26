@@ -2,7 +2,7 @@
 }
 
 .page-header__top {
-  background-color: $body-bg;
+  background-color: #2a2a2b;
   padding: 12px 0;
 }
 
@@ -13,19 +13,6 @@
 }
 
 .lang-toggle {
-  position: relative;
-  margin-right: 19.3%;
-
-  &::before {
-    position: absolute;
-    content: '';
-    width: 63px;
-    height: 17px;
-    border-radius: 5px;
-    background-color: $color-accent;
-    left: 0px;
-    z-index: 0;
-  }
 }
 
 .lang-toggle__item {
@@ -33,7 +20,7 @@
   margin: 0 10px;
   display: inline-block;
   color: #fff;
-  font-size: $fs_small;
+  font-size: 13px;
   cursor: pointer;
   text-decoration: underline;
   text-decoration-style: dotted;
@@ -42,27 +29,48 @@
   &--active, &:hover {
     text-decoration: none;
   }
+
+  &--active::before  {
+    position: absolute;
+    content: '';
+    width: 63px;
+    height: 17px;
+    border-radius: 5px;
+    background-color: #f63232;
+    top: -1px;
+    left: -8px;
+    z-index: -1;
+  }
 }
 
 .infomenu {
   @mixin notlist;
   flex-grow: 1;
+  text-align: center;
 }
 
 .infomenu__item {
+  margin-right: 20px;
   display: inline-block;
-  margin-right: 7%;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
+  }
 
   &::after {
     position: absolute;
     top: 7px;
-    right: -23px;
+    right: -13px;
     content: '';
     width: 2px;
     height: 2px;
     border-radius: 50%;
-    background: $color-accent;
+    background: #f63232;
+
+    @media (min-width: $desktop-width) {
+      right: -23px;
+    }
   }
 
   &:last-child {
@@ -77,21 +85,21 @@
 .infomenu__item a {
   text-decoration: none;
   color: #fff;
-  font-size: $fs_small;
+  font-size: 13px;
 
   &:hover {
-    color: $color-hover;
+    color: #ff4c4c;
   }
 }
 
 .callback {
   color: #fff;
-  font-size: $fs_small;
+  font-size: 13px;
 }
 
 .callback__phone {
-  color: $text-color-accent;
-  font-size: $fs;
+  color: #f74a4a;
+  font-size: 14px;
   font-weight: 700;
   text-decoration: none;
 }

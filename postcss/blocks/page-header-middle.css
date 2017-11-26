@@ -10,14 +10,13 @@
 .gender-toggle {
   @mixin notlist;
   margin-top: 7px;
-  margin-right: 23.8%;
   display: flex;
 }
 
 .gender-toggle__item {
   padding-bottom: 30px;
   flex-shrink: 0;
-  font-size: $fs_small;
+  font-size: 13px;
   font-weight: 700;
   cursor: pointer;
   text-decoration: underline;
@@ -28,13 +27,13 @@
   }
 
   &:hover {
-    color: $color-hover;
+    color: #ff4c4c;
     text-decoration: none;
   }
 
   &--active {
     position: relative;
-    color: $color-accent;
+    color: #f74a4a;
     text-decoration: none;
   }
 
@@ -48,14 +47,14 @@
     width: 9px;
     height: 9px;
     border-radius: 2px;
-    background: $body-bg1;
+    background: #28282d;
     transform: rotate(45deg);
     z-index: 1;
   }
 }
 
 .logo {
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .account-link, .cart__link {
@@ -63,14 +62,14 @@
   padding-bottom: 2px;
   padding-left: 31px;
   padding-right: 35px;
-  color: $text-color;
+  color: #2c2c2c;
   text-decoration: underline;
   text-decoration-style: dotted;
-  font-size: $fs_small;
+  font-size: 13px;
 
   &:hover {
     text-decoration: none;
-    color: $color-hover;
+    color: #ff4c4c;
   }
 }
 
@@ -92,7 +91,7 @@
     width: 37px;
     height: 37px;
     border-radius: 50%;
-    background: $color-accent;
+    background: #f63232;
     z-index: 0;
   }
 
@@ -105,7 +104,7 @@
     height: 12px;
     border-radius: 50%;
     border: 2px solid white;
-    background: $cart-bg;
+    background: #353535;
     z-index: 0;
   }
 }
@@ -127,7 +126,7 @@
 }
 
 .cart__count {
-  right: 4px;
+  right: 2px;
   top: 0px;
   position: absolute;
   font-size: 7px;
@@ -140,7 +139,7 @@
   top: 70px;
   right: 30px;
   width: 270px;
-  background: $cart-info-bh;
+  background: #1e1e1e;
   z-index: 100;
   box-shadow: 0px 15px 50px 10px rgba(30, 30, 30, 0.5);
   /*display: none;*/
@@ -157,7 +156,7 @@
     width: 9px;
     height: 9px;
     border-radius: 2px;
-    background: $cart-info-bh;
+    background: #1e1e1e;
     transform: rotate(45deg);
     z-index: 1;
   }
@@ -171,7 +170,7 @@
 .cartinfo__item {
   display: flex;
   padding: 10px;
-  border-bottom: 1px solid $body-bg1;
+  border-bottom: 1px solid #28282d;
 }
 
 .cartinfo__item img {
@@ -188,8 +187,8 @@
 
 .cartinfo__item-link {
   padding-top: 10px;
-  color: $cart-link;
-  font-size: $fs_small;
+  color: #ef3a3a;
+  font-size: 13px;
   line-height: 20px;
 
   &:hover {
@@ -199,14 +198,14 @@
 
 .cartinfo__item-size {
   padding-top: 2px;
-  color: $cart-size;
-  font-size: $fs_small;
+  color: #b5a28f;
+  font-size: 13px;
   line-height: 20px;
 }
 
 .cartinfo__item-cost {
   padding-top: 4px;
   color: #fff;
-  font-size: $fs_small;
+  font-size: 13px;
   line-height: 20px;
 }

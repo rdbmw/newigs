@@ -1,10 +1,14 @@
 @define-mixin container {
   width: 320px;
   margin: 0 auto;
-  ;
+
+  @media (min-width: $mobile-albom-width) {
+    width: 520px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 830px;
+    padding: 0 15px;
   }
 
   @media (min-width: $desktop-width) {

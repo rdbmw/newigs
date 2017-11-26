@@ -13,6 +13,14 @@
   padding-bottom: 23px;
   width: 25%;
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    width: 32%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 25%;
+  }
 }
 
 .advantages-top__item-number {
@@ -20,6 +28,15 @@
   font-size: $fs;
   color: $color-accent;
   font-weight: 700;
+
+
+    @media (min-width: $tablet-width) {
+      padding-right: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 19px;
+    }
 }
 
 .advantages-top__item-link {

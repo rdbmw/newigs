@@ -9,6 +9,14 @@
   align-items: flex-start;
   background: transparent url('../img/graffitytop.png') center 54px no-repeat;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    background-position: center 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: center 54px;
+  }
 }
 
 .banner-gender__choice {
@@ -17,7 +25,7 @@
 
 .banner-gender__title {
   margin-left: 21.5%;
-  margin-top: 16%;
+  margin-top: 88px;
   margin-bottom: 0;
   position: relative;
   top: 50px;
@@ -31,6 +39,19 @@
     top: 0px;
     opacity: 1;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 35px;
+    margin-left: 11.5%;
+    margin-top: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    margin-left: 21.5%;
+    margin-top: 88px;
+  }
+
 }
 
 .banner-gender__description {
@@ -49,6 +70,18 @@
       top: 0px;
       opacity: 1;
     }
+
+    @media (min-width: $tablet-width) {
+      margin-left: 10%;
+      letter-spacing: 0.5em;
+      margin-bottom: 70px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 10%;
+      letter-spacing: 1em;
+      margin-bottom: 84px;
+    }
 }
 
 .banner-gender__forman, .banner-gender__forwoman {
@@ -66,12 +99,28 @@
   margin-left: 15%;
   padding-left: 56px;
   background: transparent url('../img/arrowl.png') left center no-repeat;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 15%;
+  }
 }
 
 .banner-gender__forwoman {
   margin-left: 12.5%;
   padding-right: 56px;
   background: transparent url('../img/arrowr.png') right center no-repeat;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 5%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 12.5%;
+  }
 }
 
 .banner-gender__link {
@@ -89,14 +138,39 @@
     background: #fff;
     z-index: 0;
     transition: all 0.2s ease 0s;
+
+    @media (min-width: $tablet-width) {
+      width: 220px;
+      height: 220px;
+      left: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 302px;
+      height: 302px;
+      left: 0px;
+    }
   }
+
 
   &:hover::before {
-    transform: scale(1.2);
+    @media (min-width: $desktop-width) {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.banner-gender__link img {
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    height: 250px;
+    width: auto
   }
 
-  & img {
-    position: relative;
-    z-index: 1;
+  @media (min-width: $desktop-width) {
+    width: auto;
+    height: auto;
   }
 }

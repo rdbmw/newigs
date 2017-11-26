@@ -39,6 +39,18 @@
   font-size: 0px;
 }
 
+.brands__image img {
+  @media (min-width: $tablet-width) {
+    width: 405px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: auto;
+  }
+}
+
 .brands__image::after {
   position: absolute;
   content: '';
@@ -56,7 +68,7 @@
 
 .brand__images-title {
   position: absolute;
-  top: 73px;
+
   left: 0;
   right: 0;
   font-size: 20px;
@@ -65,11 +77,19 @@
   font-weight: 700;
   text-align: center;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 73px;
+  }
 }
 
 .brand__images-text {
   position: absolute;
-  top: 105px;
+
   left: 0;
   right: 0;
   font-size: 17px;
@@ -78,6 +98,14 @@
   font-weight: 400;
   text-align: center;
   z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 105px;
+  }
 }
 
 .brands__list {
@@ -121,6 +149,14 @@
   &:hover {
     color: #f63232;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 211.25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
 }
 
 .brands__controls {
@@ -155,19 +191,43 @@
 }
 
 #btn-2-2:checked ~ .brand__list-inner {
-  transform: translate(calc(-10%));
+  @media (min-width: $tablet-width) {
+    transform: translate(calc(-211.25px*1));
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(calc(-200px*1));
+  }
 }
 
 #btn-3-2:checked ~ .brand__list-inner {
-  transform: translate(calc(-20%));
+  @media (min-width: $tablet-width) {
+    transform: translate(calc(-211.25px*2));
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(calc(-200px*2));
+  }
 }
 
 #btn-4-2:checked ~ .brand__list-inner {
-  transform: translate(calc(-30%));
+  @media (min-width: $tablet-width) {
+    transform: translate(calc(-211.25px*3));
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(calc(-200px*3));
+  }
 }
 
 #btn-5-2:checked ~ .brand__list-inner {
-  transform: translate(calc(-40%));
+  @media (min-width: $tablet-width) {
+    transform: translate(calc(-211.25px*4));
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translate(calc(-200px*4));
+  }
 }
 
 .brands__forward {

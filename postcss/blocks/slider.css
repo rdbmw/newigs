@@ -1,6 +1,12 @@
 .slider-wrapper {
-  width: calc(275px * 2 + 70px / 3);
+  width: calc(270px * 2 + 60px / 3);
   background-color: $slider-bkg;
+  order: 1;
+
+  @media (min-width: $desktop-width) {
+    width: calc(270px * 2 + 90px / 3);
+    order: initial;
+  }
 }
 
 .slider {
